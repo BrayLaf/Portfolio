@@ -6,11 +6,11 @@ export default function Contact() {
             </section>
             <section className="flex flex-col mb-12 w-full">
                 <form className="flex flex-col gap-4 w-full">
-                    <input type="text" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Name:"/>
-                    <input type="email" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Email:"/>
-                    <input type="text" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Subject:"/>
-                    <textarea className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" rows="6" placeholder="Message:"></textarea>
-                    <button type="submit" className="px-3 py-1 max-w-30 border-2 text-sm border-primary rounded-lg text-primary hover:bg-primary/10 transition-colors">
+                    <input type="text" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Name:" disabled/>
+                    <input type="email" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Email:" disabled/>
+                    <input type="text" className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" placeholder="Subject:"disabled/>
+                    <textarea className="p-2 border-2 border-primary rounded-lg bg-transparent text-primary focus:outline-none focus:border-secondary transition-colors" rows="6" placeholder="Message:"disabled></textarea>
+                    <button type="" className="px-3 py-1 max-w-30 border-2 text-sm border-primary rounded-lg text-primary hover:bg-primary/10 transition-colors">
                         Send Message
                     </button>
                 </form>
