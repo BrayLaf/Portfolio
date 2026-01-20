@@ -1,18 +1,19 @@
 import { Icon } from '@iconify/react';
 import { GitHubCalendar } from 'react-github-calendar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="flex flex-col max-w-2xl mx-auto items-center px-6 py-8">
       <section className="flex flex-col mb-12">
-        <div className="w-20 h-20 bg-gray-300 rounded mb-4"></div>
+        {/* <div className="w-20 h-20 bg-gray-300 rounded mb-4"></div> */}
+        <Image quality={90} src="/mainImg.jpg" alt="Profile Picture" className="w-20 h-20 rounded mb-4" width={80} height={80}/>
         
         <h1 className="text-3xl font-bold text-primary mb-4">Braydon Lafleur</h1>
         
         <p className="text-secondary text-sm mb-6 max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet erat ac 
-          pulvinar tincidunt. Nullam laoreet ac tortor ac scelerisque.
+          Full-Stack Developer with a passion for all things tech. Skilled in backend systems, relational databases, and cloud services. Always eager to learn and take on new challenges.
         </p>
         
         <div className="flex flex-wrap gap-3 mb-6">
@@ -70,10 +71,8 @@ export default function Home() {
                 <p className="text-secondary text-sm mb-4 mt-2">
                     CoursePilot is a full-stack web application designed to streamline course discovery and registration for software development students. Built with a React frontend and a Node.js/Express backend, it features user authentication, course browsing, and enrollment functionalities. The application integrates with a SQL server hosted on Azure to manage course data and user information securely. Key features include a responsive design, intuitive user interface, and robust backend services to ensure a seamless user experience.
                 </p>
-                {/* image placeholders */}
                 <div className="flex gap-4">
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
+                    <Image quality={90} src="/CoursePilot.png" alt="CoursePilot Screenshot 1" className="flex-1 object-contain rounded" width={1920} height={1080}/>
                 </div>
             </section>
 
@@ -95,8 +94,7 @@ export default function Home() {
                 </p>
                 {/* image placeholders */}
                 <div className="flex gap-4">
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
+                    <Image quality={90} src="/NestSc.png" alt="Nest Trading App Screenshot 1" className="flex-1 object-contain rounded" width={1920} height={1080}/>
                 </div>
             </section>
     </div>

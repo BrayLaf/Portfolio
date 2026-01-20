@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
     return (
@@ -26,8 +27,7 @@ export default function Projects() {
                 </p>
                 {/* image placeholders */}
                 <div className="flex gap-4">
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
+                    <Image quality={90} src="/CoursePilot.png" alt="CoursePilot Screenshot 1" className="flex-1 object-contain rounded" width={1920} height={1080}/>
                 </div>
             </section>
 
@@ -49,8 +49,7 @@ export default function Projects() {
                 </p>
                 {/* image placeholders */}
                 <div className="flex gap-4">
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
+                    <Image quality={90} src="/NestSc.png" alt="Nest Trading App Screenshot 1" className="flex-1 object-contain rounded" width={1920} height={1080}/>
                 </div>
             </section>
 
@@ -70,11 +69,6 @@ export default function Projects() {
                 <p className="text-secondary text-sm mb-4 mt-2">
                     The website you are currently viewing! This portfolio site is built using Next.js and React, showcasing my projects, skills, and professional background. It features a responsive design, dark/light mode toggle, and interactive elements to enhance user experience. The site is optimized for performance and accessibility, ensuring it looks great on all devices. It serves as a central hub for potential employers and collaborators to learn more about my work and get in touch.
                 </p>
-                {/* image placeholders */}
-                <div className="flex gap-4">
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                    <div className="flex-1 h-32 bg-gray-300 rounded"></div>
-                </div>
             </section>
         </div>
     )
