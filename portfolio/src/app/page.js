@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div className="flex flex-col max-w-2xl mx-auto items-center px-6 py-8">
       <section className="flex flex-col mb-12">
-        {/* <div className="w-20 h-20 bg-gray-300 rounded mb-4"></div> */}
         <Image quality={90} src="/mainImg.jpg" alt="Profile Picture" className="w-20 h-20 rounded mb-4" width={80} height={80}/>
         
         <h1 className="text-3xl font-bold text-primary mb-4">Braydon Lafleur</h1>
