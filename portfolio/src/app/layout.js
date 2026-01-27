@@ -19,6 +19,9 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: "Braydon Lafleur | Full-stack Developer",
   description: "Full-stack developer with a passion for tech.",
+  verification: {
+    google: "cu40yGEFIVSPC8HpnnmG573_jdN91bL0EseJ0WIR2QM",
+  },
   openGraph: {
     title: "Braydon Lafleur | Full-stack Developer",
     description: "Full-stack developer with a passion for tech.",
@@ -52,9 +55,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
